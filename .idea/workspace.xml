@@ -2,6 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3993600.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3993600.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3993600.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3994880.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3994880.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3994880.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3996160.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3996160.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3996160.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3997440.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3997440.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3997440.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3998720.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3998720.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3998720.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/Graph/events.out.tfevents.1525771173.zgc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/checkpoint" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" beforeDir="false" afterPath="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" afterDir="false" />
@@ -37,8 +54,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="211">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -241,17 +258,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1505" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25272927" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25272927" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" weight="0.32948583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32948583" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -311,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="211">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
