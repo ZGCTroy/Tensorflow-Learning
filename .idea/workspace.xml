@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" beforeDir="false" afterPath="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/模板.py" beforeDir="false" afterPath="$PROJECT_DIR$/模板.py" afterDir="false" />
-    </list>
+    <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,14 +11,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="线性回归.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="线性回归.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="347">
+              <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="对数几率回归.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/1、基础回归/对数几率回归/对数几率回归.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -67,6 +73,11 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
+              <item name="1、基础回归" type="cbb8eebc:String" user="1、基础回归" />
             </path>
           </expand>
           <select />
@@ -153,7 +164,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1505" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25272927" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -187,11 +197,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="347">
+          <caret line="75" column="32" selection-start-line="75" selection-start-column="32" selection-end-line="75" selection-end-column="32" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1、基础回归/对数几率回归/对数几率回归.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
