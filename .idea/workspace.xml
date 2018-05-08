@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3993600.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3993600.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3993600.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3994880.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3994880.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3994880.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3996160.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3996160.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3996160.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3997440.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3997440.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3997440.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3998720.data-00000-of-00001" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3998720.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/-3998720.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/Graph/events.out.tfevents.1525771173.zgc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/Model/checkpoint" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" beforeDir="false" afterPath="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/模板.py" beforeDir="false" afterPath="$PROJECT_DIR$/模板.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7、强化学习/Policy Network.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,58 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="对数几率回归.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1、基础回归/对数几率回归/对数几率回归.py">
+      <file leaf-file-name="Policy Network.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1440">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="线性回归.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="模板.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/模板.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            <state relative-caret-position="120">
+              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,6 +41,7 @@
         <option value="$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py" />
         <option value="$PROJECT_DIR$/模板.py" />
         <option value="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py" />
+        <option value="$PROJECT_DIR$/7、强化学习/Policy Network.py" />
       </list>
     </option>
   </component>
@@ -126,7 +72,12 @@
               <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
               <item name="6、循环神经网络RNN" type="462c0819:PsiDirectoryNode" />
-              <item name="Bidirectional LSTM Classifier" type="462c0819:PsiDirectoryNode" />
+              <item name="LSTM" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
+              <item name="7、强化学习" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -258,8 +209,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1505" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25272927" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25272927" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -267,7 +219,7 @@
       <window_info anchor="bottom" id="Version Control" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" weight="0.32948583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32948583" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -287,34 +239,10 @@
         <state relative-caret-position="-3118" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1、基础回归/对数几率回归/对数几率回归.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1440">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/卷积神经网络-进阶.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -325,13 +253,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1、基础回归/线性回归/线性回归.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="61" column="43" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1440">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/1、基础回归/对数几率回归/对数几率回归.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="451">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
         </state>
       </provider>
     </entry>
