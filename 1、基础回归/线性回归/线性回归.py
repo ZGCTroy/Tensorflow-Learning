@@ -68,7 +68,8 @@ with tf.Session() as sess:
     initial_step = 0
 
     # 验证之前是否已经保存了检查点文件
-    FilePath = os.path.dirname(__file__) + '/Model'
+    FilePath = os.path.dirname(__file__) + '/Model'+'/model'
+    print(FilePath)
     ckpt = tf.train.get_checkpoint_state(FilePath)
     if ckpt and ckpt.model_checkpoint_path:
         # 从检查点恢复模型参数
