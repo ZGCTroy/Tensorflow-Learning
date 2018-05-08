@@ -3,13 +3,17 @@
 # Just disables the warning, doesn't enable AVX/FMA
 import os
 import tensorflow as tf
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+
 # os.environ["CUDA_VISIBLE_DEVICES"]="-1"
 
 
 def read_csv(batch_size, file_name, record_defaults):
     filename_queue = tf.train.string_input_producer(
-        [os.path.dirname(__file__)+"/"+file_name])
+        [os.path.dirname(__file__) + "/" + file_name]
+    )
     reader = tf.TextLineReader(skip_header_lines=1)
     key, value = reader.read(filename_queue)
 
@@ -17,20 +21,17 @@ def read_csv(batch_size, file_name, record_defaults):
     # 它还会为每一列设置数据类型
     decoded = tf.decode_csv(value, record_defaults=record_defaults)
     # 实际上会读取一个文件，并加载一个张量中的batch_size行
-    return tf.train.shuffle_batch(decoded,
-                                  batch_size=batch_size,
-                                  capacity=batch_size*50,
-                                  min_after_dequeue=batch_size)
+    return tf.train.shuffle_batch(
+        decoded,
+        batch_size=batch_size,
+        capacity=batch_size * 50,
+        min_after_dequeue=batch_size
+    )
 
 
 # 对数几率回归相同的参数和变量初始化
 W = tf.Variable(tf.zeros([5, 1]), name="weights")
 b = tf.Variable(0., name="bias")
-
-
-# 之前的推断现在用于值的合并
-def combine_inputs(X):
-    return tf.matmul(X, W) + b
 
 
 def inputs():
@@ -56,6 +57,11 @@ def inputs():
     survived = tf.reshape(survived, [100, 1])
 
     return features, survived
+
+
+# 之前的推断现在用于值的合并
+def combine_inputs(X):
+    return tf.matmul(X, W) + b
 
 
 # 新的推断值是将sigmoid函数运用到前面的合并值的输出
@@ -92,7 +98,7 @@ with tf.Session() as sess:
     initial_step = 0
 
     # 验证之前是否已经保存了检查点文件
-    FilePath = os.path.dirname(__file__)+'/Model/my_model_对数几率回归'
+    FilePath = os.path.dirname(__file__) + '/Model/my_model_对数几率回归'
     ckpt = tf.train.get_checkpoint_state(FilePath)
     if ckpt and ckpt.model_checkpoint_path:
         # 从检查点恢复模型参数
