@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7、强化学习/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/7、强化学习/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7、强化学习/Model/-4575.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7、强化学习/Model/-4575.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7、强化学习/Model/-4575.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7、强化学习/Model/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/7、强化学习/Policy Network/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/7、强化学习/Policy Network/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7、强化学习/Value Network/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/7、强化学习/Value Network/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,22 +20,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/7、强化学习/main.py">
+        <entry file="file://$PROJECT_DIR$/7、强化学习/Value Network/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="76" lean-forward="true" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="77" />
+            <state relative-caret-position="105">
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/Policy Network/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -50,6 +46,18 @@
       <find>mer</find>
       <find>reward</find>
       <find>summary</find>
+      <find>learning</find>
+      <find>sizeY</find>
+      <find>plt</find>
+      <find>Model</find>
+      <find>feed</find>
+      <find>num_epi</find>
+      <find>gameEnv</find>
+      <find>200</find>
+      <find>cpkt</find>
+      <find>False</find>
+      <find>render</find>
+      <find>fi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -64,14 +72,16 @@
         <option value="$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py" />
         <option value="$PROJECT_DIR$/7、强化学习/Policy Network.py" />
         <option value="$PROJECT_DIR$/7、强化学习/main.py" />
+        <option value="$PROJECT_DIR$/7、强化学习/Policy Network/main.py" />
+        <option value="$PROJECT_DIR$/7、强化学习/Value Network/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2036" />
-    <option name="y" value="384" />
+    <option name="x" value="1705" />
+    <option name="y" value="468" />
     <option name="width" value="1353" />
-    <option name="height" value="828" />
+    <option name="height" value="856" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -88,31 +98,13 @@
             <path>
               <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="6、循环神经网络RNN" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="6、循环神经网络RNN" type="462c0819:PsiDirectoryNode" />
-              <item name="Bidirectional LSTM Classifier" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="6、循环神经网络RNN" type="462c0819:PsiDirectoryNode" />
-              <item name="LSTM" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
-              <item name="6、循环神经网络RNN" type="462c0819:PsiDirectoryNode" />
-              <item name="LSTM" type="462c0819:PsiDirectoryNode" />
-              <item name="Policy Network" type="462c0819:PsiDirectoryNode" />
+              <item name="7、强化学习" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
               <item name="7、强化学习" type="462c0819:PsiDirectoryNode" />
+              <item name="Value Network" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -145,6 +137,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/7、强化学习/Policy Network" />
+      <recent name="$PROJECT_DIR$/7、强化学习" />
+      <recent name="$PROJECT_DIR$/6、循环神经网络RNN/LSTM" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -157,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main (3)">
     <configuration name="线性回归" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tensorflow-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -206,7 +205,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7、强化学习/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7、强化学习/Policy Network/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -224,7 +223,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6、循环神经网络RNN/LSTM/Policy Network/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6、循环神经网络RNN/LSTM/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tensorflow-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/7、强化学习/Value Network" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7、强化学习/Value Network/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -253,9 +270,11 @@
       <item itemvalue="Python.main" />
       <item itemvalue="Python.main (1)" />
       <item itemvalue="Python.main (2)" />
+      <item itemvalue="Python.main (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main (2)" />
         <item itemvalue="Python.main" />
@@ -286,16 +305,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1505" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="1504" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34770742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34770742" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4501574" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4501574" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32948583" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948583" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,47 +331,37 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/7、强化学习/main.py">
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Value Network/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        <state relative-caret-position="3180">
+          <caret line="218" column="23" lean-forward="true" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1410">
+          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7、强化学习/main.py">
+    <entry file="file://$PROJECT_DIR$/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
+    <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/卷积神经网络-基础.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1365">
+          <caret line="93" column="44" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/RNN-LSTM/main.py" />
     <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/卷积神经网络-进阶.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -359,6 +369,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/经典卷积网络AlexNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5、Word2Vec词向量/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="214" column="37" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="85" column="43" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Value Network/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4605">
+          <caret line="313" lean-forward="true" selection-start-line="313" selection-end-line="313" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="67" column="10" lean-forward="true" selection-start-line="67" selection-start-column="10" selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="44" column="24" selection-start-line="44" selection-start-column="24" selection-end-line="44" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/RNN-LSTM/main.py" />
     <entry file="file://$PROJECT_DIR$/模板.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -382,27 +452,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network.py" />
     <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/main.py" />
-    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="67" selection-start-line="67" selection-end-line="68" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/Policy Network/main.py">
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/LSTM/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7、强化学习/main.py">
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/tensorflow/python/framework/ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="76" lean-forward="true" selection-start-line="30" selection-start-column="76" selection-end-line="30" selection-end-column="77" />
+        <state relative-caret-position="165">
+          <caret line="1569" selection-start-line="1569" selection-end-line="1569" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/gym/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1410">
+          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6、循环神经网络RNN/Bidirectional LSTM Classifier/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="85" column="43" selection-start-line="85" selection-start-column="4" selection-end-line="85" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/卷积神经网络-基础.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1365">
+          <caret line="93" column="44" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5、Word2Vec词向量/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3105">
+          <caret line="214" column="37" selection-start-line="214" selection-start-column="37" selection-end-line="214" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/卷积神经网络-进阶.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" selection-start-line="14" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/经典卷积网络AlexNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7、强化学习/Value Network/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

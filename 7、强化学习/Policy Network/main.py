@@ -21,7 +21,8 @@ env.render()
 # Hyper Parameters
 H = 50
 batch_size = 25
-learning_rate = 1e-1
+lr=1e-1
+learning_rate = tf.placeholder(tf.float32,name="learning_rate")
 D = 4
 gamma = 0.99
 
@@ -73,6 +74,7 @@ with tf.Session() as sess:
     coord = tf.train.Coordinator()
     threads = tf.train.start_queue_runners(sess=sess, coord=coord)
 
+
     # 从检测点恢复模型
     episode_number = 1
     FilePath = os.path.dirname(__file__) + '/Model/'
@@ -97,7 +99,7 @@ with tf.Session() as sess:
             rendering = True
         x = np.reshape(observation, [1, D])
 
-        tfprob = sess.run(probability, feed_dict={observations: x})
+        tfprob = sess.run(probability, feed_dict={observations: x,learning_rate:lr})
         action = 1 if np.random.uniform() < tfprob else 0
 
         xs.append(x)
@@ -124,7 +126,8 @@ with tf.Session() as sess:
                 feed_dict={
                     observations: epx,
                     input_y: epy,
-                    advantages: discounted_epr
+                    advantages: discounted_epr,
+                    learning_rate:lr
                 }
             )
             for ix, grad in enumerate(tGrad):
@@ -135,13 +138,16 @@ with tf.Session() as sess:
                     updateGrads,
                     feed_dict={
                         W1Grad: gradBuffer[0],
-                        W2Grad: gradBuffer[1]
+                        W2Grad: gradBuffer[1],
+                        learning_rate: lr
                     }
                 )
                 for ix, grad in enumerate(gradBuffer):
                     gradBuffer[ix] = grad * 0
 
                 print('Average reward for episode %d : %f.' % (episode_number, reward_sum / batch_size))
+                if reward_sum/batch_size == 200 and lr==0.1:
+                    lr=0.01
 
                 # 保存模型
                 saver.save(
@@ -154,7 +160,8 @@ with tf.Session() as sess:
                     feed_dict={
                         observations: epx,
                         input_y: epy,
-                        advantages: discounted_epr
+                        advantages: discounted_epr,
+                        learning_rate: lr
                     }
                 )
                 writer.add_summary(summary, global_step=episode_number)
