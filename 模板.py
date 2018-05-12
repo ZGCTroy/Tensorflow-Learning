@@ -1,6 +1,7 @@
 
 
 tf.summary.scalar("output_summary", output)
+tf.summary.image('output_iamge',output,10)
 merged_summaries = tf.summary.merge_all()
 
 with tf.Session() as sess:
@@ -18,6 +19,7 @@ with tf.Session() as sess:
         saver.restore(sess, ckpt.model_checkpoint_path)
         initial_step = int(ckpt.model_checkpoint_path.rsplit('-', 1)[1])
 
+    writer = tf.summary.FileWriter('./Model/improved_graph', sess.graph)
     # 实际的训练闭环
     for step in range(initial_step, training_steps):
         sess.run([train_op])
@@ -28,7 +30,7 @@ with tf.Session() as sess:
                 FilePath,
                 global_step=step
             )
-            writer = tf.summary.FileWriter('./Model/improved_graph', graph)
+
             writer.add_summary(summary, global_step=step)
 
 

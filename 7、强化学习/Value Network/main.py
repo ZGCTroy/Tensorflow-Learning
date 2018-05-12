@@ -5,7 +5,8 @@ import scipy.misc
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import os
-
+from matplotlib.animation import FuncAnimation
+from matplotlib import animation
 
 
 # 创建环境内物体对象的class
@@ -28,12 +29,11 @@ class gameEnv():
         self.actions = 4
         self.objects = []
         a = self.reset()
-        print("sb")
         plt.imshow(a, interpolation="nearest")
 
     def reset(self):
         self.objects = []
-        hero = gameOb(self.newPosition(), 1, 1, 2,None, 'hero')
+        hero = gameOb(self.newPosition(), 1, 1, 2, None, 'hero')
         goal = gameOb(self.newPosition(), 1, 1, 1, 1, 'goal')
         hole = gameOb(self.newPosition(), 1, 1, 0, -1, 'fire')
         goal2 = gameOb(self.newPosition(), 1, 1, 1, 1, 'goal')
@@ -74,11 +74,11 @@ class gameEnv():
         currentPositions = []
 
         for objectA in self.objects:
-            if (objectA.x,objectA.y) not in currentPositions:
-                currentPositions.append((objectA.x,objectA.y))
+            if (objectA.x, objectA.y) not in currentPositions:
+                currentPositions.append((objectA.x, objectA.y))
         for pos in currentPositions:
             points.remove(pos)
-        location = np.random.choice(range(len(points)),replace=False)
+        location = np.random.choice(range(len(points)), replace=False)
         return points[location]
 
     def checkGoal(self):
@@ -93,43 +93,45 @@ class gameEnv():
             if hero.x == other.x and hero.y == other.y:
                 self.objects.remove(other)
                 if other.reward == 1:
-                    self.objects.append(gameOb(self.newPosition(),1,1,1,1,'goal'))
+                    self.objects.append(gameOb(self.newPosition(), 1, 1, 1, 1, 'goal'))
                 else:
-                    self.objects.append(gameOb(self.newPosition(),1,1,0,-1,'fire'))
-                return other.reward,False
+                    self.objects.append(gameOb(self.newPosition(), 1, 1, 0, -1, 'fire'))
+                return other.reward, False
 
-        return 0.0,False
+        return 0.0, False
 
     def renderEnv(self):
-        a = np.ones([self.sizeY+2,self.sizeX+2,3])
-        a[1:-1,1:-1,:]=0
+        a = np.ones([self.sizeY + 2, self.sizeX + 2, 3])
+        a[1:-1, 1:-1, :] = 0
         hero = None
         for item in self.objects:
-            a[item.y+1:item.y+item.size+1,item.x+1:item.x+item.size+1,item.channel] = item.intensity
-        b = scipy.misc.imresize(a[:,:,0],[84,84,1],interp='nearest')
-        c = scipy.misc.imresize(a[:,:,1],[84,84,1],interp='nearest')
-        d = scipy.misc.imresize(a[:,:,2],[84,84,1],interp='nearest')
-        a = np.stack([b,c,d],axis=2)
+            a[item.y + 1:item.y + item.size + 1, item.x + 1:item.x + item.size + 1, item.channel] = item.intensity
+        b = scipy.misc.imresize(a[:, :, 0], [84, 84, 1], interp='nearest')
+        c = scipy.misc.imresize(a[:, :, 1], [84, 84, 1], interp='nearest')
+        d = scipy.misc.imresize(a[:, :, 2], [84, 84, 1], interp='nearest')
+        a = np.stack([b, c, d], axis=2)
         return a
 
-    def step(self,action):
+    def step(self, action):
         self.moveChar(action)
-        reward,done = self.checkGoal()
+        reward, done = self.checkGoal()
         state = self.renderEnv()
         plt.imshow(state)
-        return state,reward,done
+        return state, reward, done
+
 
 env = gameEnv(size=5)
 
+
 class Qnetwork():
-    def __init__(self,h_size):
-        self.scalarInput = tf.placeholder(shape=[None,21168],dtype=tf.float32)
-        self.imageIn = tf.reshape(self.scalarInput,shape=[-1,84,84,3])
-        self.conv1= tf.contrib.layers.convolution2d(
-            inputs = self.imageIn,
-            num_outputs = 32,
-            kernel_size = [ 8,8],
-            stride=[4,4],
+    def __init__(self, h_size):
+        self.scalarInput = tf.placeholder(shape=[None, 21168], dtype=tf.float32)
+        self.imageIn = tf.reshape(self.scalarInput, shape=[-1, 84, 84, 3])
+        self.conv1 = tf.contrib.layers.convolution2d(
+            inputs=self.imageIn,
+            num_outputs=32,
+            kernel_size=[8, 8],
+            stride=[4, 4],
             padding='VALID',
             biases_initializer=None
         )
@@ -157,57 +159,66 @@ class Qnetwork():
             padding='VALID',
             biases_initializer=None
         )
-        self.streamAC,self.streamVC = tf.split(self.conv4,2,3)
+        self.streamAC, self.streamVC = tf.split(self.conv4, 2, 3)
         self.streamA = tf.contrib.layers.flatten(self.streamAC)
         self.streamV = tf.contrib.layers.flatten(self.streamVC)
-        self.AW = tf.Variable(tf.random_normal([h_size//2,env.actions]))
-        self.VW = tf.Variable(tf.random_normal([h_size//2,1]))
-        self.Advantage = tf.matmul(self.streamA,self.AW)
-        self.Value = tf.matmul(self.streamV,self.VW)
+        self.AW = tf.Variable(tf.random_normal([h_size // 2, env.actions]))
+        self.VW = tf.Variable(tf.random_normal([h_size // 2, 1]))
+        self.Advantage = tf.matmul(self.streamA, self.AW)
+        self.Value = tf.matmul(self.streamV, self.VW)
 
-        self.Qout = self.Value + tf.subtract(self.Advantage,tf.reduce_mean(self.Advantage,reduction_indices=1,keep_dims=True))
-        self.predict = tf.argmax(self.Qout,1)
+        self.Qout = self.Value + tf.subtract(self.Advantage,
+                                             tf.reduce_mean(self.Advantage, reduction_indices=1, keep_dims=True))
+        self.predict = tf.argmax(self.Qout, 1)
 
-        self.targetQ = tf.placeholder(shape=[None],dtype=tf.float32)
-        self.actions = tf.placeholder(shape=[None],dtype=tf.int32)
-        self.actions_onehot = tf.one_hot(self.actions,env.actions,dtype=tf.float32)
-        self.Q = tf.reduce_sum(tf.multiply(self.Qout,self.actions_onehot),reduction_indices=1)
+        self.targetQ = tf.placeholder(shape=[None], dtype=tf.float32)
+        self.actions = tf.placeholder(shape=[None], dtype=tf.int32)
+        self.actions_onehot = tf.one_hot(self.actions, env.actions, dtype=tf.float32)
+        self.Q = tf.reduce_sum(tf.multiply(self.Qout, self.actions_onehot), reduction_indices=1)
 
-        self.td_error = tf.square(self.targetQ-self.Q)
+        self.td_error = tf.square(self.targetQ - self.Q)
         self.loss = tf.reduce_mean(self.td_error)
         self.trainer = tf.train.AdamOptimizer(learning_rate=0.0001)
         self.updateModel = self.trainer.minimize(self.loss)
 
+        tf.summary.scalar("loss", self.loss)
+        self.merged_summary = tf.summary.merge_all()
+
+
 class experience_buffer():
-    def __init__(self,buffer_size=50000):
+    def __init__(self, buffer_size=50000):
         self.buffer = []
         self.buffer_size = buffer_size
 
-    def add(self,experience):
+    def add(self, experience):
         if len(self.buffer) + len(experience) >= self.buffer_size:
-            self.buffer[0:(len(experience)+len(self.buffer))-self.buffer_size] = []
+            self.buffer[0:(len(experience) + len(self.buffer)) - self.buffer_size] = []
         self.buffer.extend(experience)
 
-    def sample(self,size):
-        return np.reshape(np.array(random.sample(self.buffer,size)),[size,5])
+    def sample(self, size):
+        return np.reshape(np.array(random.sample(self.buffer, size)), [size, 5])
+
 
 def processState(states):
-    return np.reshape(states,[21168])
+    return np.reshape(states, [21168])
 
-def updateTargetGraph(tfVars,tau):
+
+def updateTargetGraph(tfVars, tau):
     total_vars = len(tfVars)
     op_holder = []
-    for idx,var in enumerate(tfVars[0:total_vars//2]):
+    for idx, var in enumerate(tfVars[0:total_vars // 2]):
         op_holder.append(
-            tfVars[idx+total_vars//2].assign(
-                (var.value() * tau) + ((1-tau)*tfVars[idx+total_vars//2].value())
+            tfVars[idx + total_vars // 2].assign(
+                (var.value() * tau) + ((1 - tau) * tfVars[idx + total_vars // 2].value())
             )
         )
     return op_holder
 
-def updateTarget(op_holder,sess):
+
+def updateTarget(op_holder, sess):
     for op in op_holder:
         sess.run(op)
+
 
 # Hyper Parameters
 batch_size = 32
@@ -229,90 +240,102 @@ targetQN = Qnetwork(h_size)
 init = tf.global_variables_initializer()
 
 trainables = tf.trainable_variables()
-targetOps = updateTargetGraph(trainables,tau)
+targetOps = updateTargetGraph(trainables, tau)
 
 myBuffer = experience_buffer()
 
 e = startE
-stepDrop = (startE-endE)/anneling_steps
+stepDrop = (startE - endE) / anneling_steps
 
 rList = []
 total_steps = 0
 
-saver =tf.train.Saver()
+saver = tf.train.Saver()
 if not os.path.exists(path):
     os.makedirs(path)
 
 with tf.Session() as sess:
+    writer = tf.summary.FileWriter('./Model/Graph', sess.graph)
+    sess.run(init)
     initial_step = 0
     if load_model == True:
         print('Loading Model...')
         ckpt = tf.train.get_checkpoint_state(path)
         if ckpt and ckpt.model_checkpoint_path:
-            saver.restore(sess,ckpt.model_checkpoint_path)
-            initial_step=int(ckpt.model_checkpoint_path.rsplit('-', 1)[1])
+            saver.restore(sess, ckpt.model_checkpoint_path)
+            initial_step = int(ckpt.model_checkpoint_path.rsplit('-', 1)[1])
         else:
             print('Load Failed')
 
-    sess.run(init)
-    updateTarget(targetOps,sess)
-    for i in range(initial_step,num_episodes+1):
+    updateTarget(targetOps, sess)
+    for i in range(initial_step, num_episodes + 1):
         episodeBuffer = experience_buffer()
         s = env.reset()
         plt.imshow(s, interpolation="nearest")
         s = processState(s)
         d = False
         rAll = 0
-        j =0
+        j = 0
 
-        while j<max_epLength:
-            j+=1
-            if np.random.rand(1) < e or total_steps<pre_train_steps:
-                a = np.random.randint(0,4)
+        while j < max_epLength:
+            j += 1
+            if np.random.rand(1) < e or total_steps < pre_train_steps:
+                a = np.random.randint(0, 4)
             else:
-                a = sess.run(mainQN.predict,feed_dict={mainQN.scalarInput:[s]})[0]
-            s1,r,d=env.step(a)
+                a = sess.run(mainQN.predict, feed_dict={mainQN.scalarInput: [s]})[0]
+            s1, r, d = env.step(a)
+            # plt.ion()
+            # plt.cla()
+            # plt.imshow(s1)
+            # plt.pause(0.0000001)
+
             s1 = processState(s1)
-            total_steps+=1
-            episodeBuffer.add(np.reshape(np.array([s,a,r,s1,d]),[1,5]))
+            total_steps += 1
+            episodeBuffer.add(np.reshape(np.array([s, a, r, s1, d]), [1, 5]))
             if total_steps > pre_train_steps:
-                if e> endE:
+                if e > endE:
                     e -= stepDrop
                 if total_steps % (update_freq) == 0:
                     trainBatch = myBuffer.sample(batch_size)
-                    A = sess.run(mainQN.predict,feed_dict={mainQN.scalarInput:np.vstack(trainBatch[:,3])})
-                    Q = sess.run(targetQN.Qout,feed_dict={targetQN.scalarInput:np.vstack(trainBatch[:,3])})
-                    doubleQ = Q[range(batch_size),A]
-                    targetQ = trainBatch[:,2] + y*doubleQ
-                    _ = sess.run(
-                        mainQN.updateModel,
+                    A = sess.run(mainQN.predict,feed_dict={mainQN.scalarInput: np.vstack(trainBatch[:, 3])})
+                    Q = sess.run(targetQN.Qout, feed_dict={targetQN.scalarInput: np.vstack(trainBatch[:, 3])})
+
+
+                    doubleQ = Q[range(batch_size), A]
+                    targetQ = trainBatch[:, 2] + y * doubleQ
+                    _ ,merged_summary= sess.run(
+                        [mainQN.updateModel,mainQN.merged_summary],
                         feed_dict={
-                            mainQN.scalarInput:np.vstack(trainBatch[:,0]),
-                            mainQN.targetQ:targetQ,
-                            mainQN.actions:trainBatch[:,1]
+                            mainQN.scalarInput: np.vstack(trainBatch[:, 0]),
+                            mainQN.targetQ: targetQ,
+                            mainQN.actions: trainBatch[:, 1]
                         }
                     )
+                    writer.add_summary(merged_summary, global_step=total_steps)
 
-                    updateTarget(targetOps,sess)
+                    updateTarget(targetOps, sess)
             rAll += r
             s = s1
 
-            if d ==True:
+            if d == True:
                 break
 
         myBuffer.add(episodeBuffer.buffer)
         rList.append(rAll)
-        if i>0 and i%25 == 0:
-            print('episode',i,', average reward of last 25 episode',np.mean(rList[-25:]))
+        if i > 0 and i % 25 == 0:
+            print('episode', i, ', average reward of last 25 episode', np.mean(rList[-25:]))
 
-        if i>0 and i%100==0:
-            saver.save(sess,path+'/model-'+str(i))
+
+        if i > 0 and i % 100 == 0:
+            saver.save(sess, path + '/model-' + str(i))
             print("Saved Model")
 
-    saver.save(sess,path+'/model-'+str(i))
+    saver.save(sess, path + '/model-' + str(i))
+    writer.flush()
+    writer.close()
 
-rMat = np.resize(np.array(rList),[len(rList)//100,100])
-rMean = np.average(rMat,1)
+rMat = np.resize(np.array(rList), [len(rList) // 100, 100])
+rMean = np.average(rMat, 1)
 print(rMean)
 plt.plot(rMean)
 plt.show()
