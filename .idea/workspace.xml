@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/eval.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/TextCNN_Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/TextCNN_Model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/data_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/data_helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/train.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,13 +28,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+            <state relative-caret-position="120">
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sentence_Similarity_CNN_Model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding>
-                <element signature="e#24#47#0" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+              <folding>
+                <element signature="e#14#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+              <folding>
+                <element signature="e#38#53#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,8 +108,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>episode_number</find>
-      <find>mer</find>
       <find>reward</find>
       <find>summary</find>
       <find>learning</find>
@@ -97,7 +127,21 @@
       <find>pre_tra</find>
       <find>total</find>
       <find>l2_reg_lambda</find>
+      <find>read_</find>
+      <find>read_da</find>
+      <find>data_helpers</find>
+      <find>read_data</find>
+      <find>dataset</find>
+      <find>data_helper</find>
+      <find>batch_iter</find>
+      <find>glove.6B</find>
+      <find>read</find>
+      <find>print</find>
+      <find>map</find>
     </findStrings>
+    <replaceStrings>
+      <replace>data_helpers</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -121,6 +165,9 @@
         <option value="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/train.py" />
         <option value="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/TextCNN_Model.py" />
         <option value="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/data_helpers.py" />
+        <option value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py" />
+        <option value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py" />
+        <option value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py" />
       </list>
     </option>
   </component>
@@ -172,7 +219,7 @@
               <item name="Tensorflow-Learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
               <item name="8、NLP深入学习" type="462c0819:PsiDirectoryNode" />
-              <item name="Text Classification(CNN)" type="462c0819:PsiDirectoryNode" />
+              <item name="Sentence Similarity(CNN)" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -203,7 +250,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train (1)">
+  <component name="RunManager" selected="Python.train (2)">
     <configuration name="TextCNN_Model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tensorflow-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -217,6 +264,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8、NLP深入学习/TextCNN/TextCNN_Model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="data_helpers (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tensorflow-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -240,42 +305,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Tensorflow-Learning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/7、强化学习/Value Network" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7、强化学习/Value Network/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="main (4)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Tensorflow-Learning" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/1、基础回归/mnist" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1、基础回归/mnist/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Tensorflow-Learning" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,6 +318,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="train (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Tensorflow-Learning" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,19 +360,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.main (3)" />
-      <item itemvalue="Python.main (4)" />
       <item itemvalue="Python.train" />
       <item itemvalue="Python.data_helpers" />
       <item itemvalue="Python.train (1)" />
+      <item itemvalue="Python.train (2)" />
+      <item itemvalue="Python.data_helpers (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train (2)" />
+        <item itemvalue="Python.data_helpers (1)" />
         <item itemvalue="Python.train (1)" />
         <item itemvalue="Python.train" />
         <item itemvalue="Python.data_helpers" />
-        <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.main (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -361,7 +408,7 @@
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36306402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.40620956" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.40608606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -377,29 +424,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/8、NLP深入学习/TextCNN/TextCNN_Model.py" />
-    <entry file="file://$PROJECT_DIR$/8、NLP深入学习/TextCNN/TextCNN_Model.py" />
-    <entry file="file://$PROJECT_DIR$/7、强化学习/Value Network/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3180">
-          <caret line="218" column="23" lean-forward="true" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/7、强化学习/Policy Network/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="97" column="21" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_helpers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4、卷积神经网络CNN/卷积神经网络-基础.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1365">
@@ -635,10 +659,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="107" column="31" selection-start-line="107" selection-start-column="31" selection-end-line="107" selection-end-column="31" />
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding>
-            <element signature="e#24#47#0" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/absl/flags/_flagvalues.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2218">
+          <caret line="469" selection-start-line="469" selection-end-line="469" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/lib/python3.5/dist-packages/pandas/io/parsers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="708" selection-start-line="708" selection-end-line="708" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/glove.6B.50d.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
+          <folding>
+            <element signature="e#14#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
+          <folding>
+            <element signature="e#38#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
