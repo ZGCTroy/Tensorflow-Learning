@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/SICK_data/SICK.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/SICK_data/SICK.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/glove.6B.50d.txt" beforeDir="false" afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/glove.6B.50d.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -12,11 +15,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="eval.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/eval.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1410">
+            <state relative-caret-position="1290">
               <caret line="94" column="55" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
               <folding>
                 <element signature="e#24#47#0" expanded="true" />
@@ -37,7 +40,7 @@
       <file leaf-file-name="Sentence_Similarity_CNN_Model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
+            <state relative-caret-position="270">
               <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -49,11 +52,8 @@
       <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
+            <state relative-caret-position="1335">
               <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-              <folding>
-                <element signature="e#14#32#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -61,7 +61,7 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="-50">
               <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
               <folding>
                 <element signature="e#38#53#0" expanded="true" />
@@ -73,7 +73,7 @@
       <file leaf-file-name="data_helpers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/data_helpers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
+            <state relative-caret-position="930">
               <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="TextCNN_Model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/TextCNN_Model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
+            <state relative-caret-position="1125">
               <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
               <folding>
                 <element signature="e#1#24#0" expanded="true" />
@@ -179,27 +179,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
-              <item name="1、基础回归" type="cbb8eebc:String" user="1、基础回归" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
-              <item name="7、强化学习" type="cbb8eebc:String" user="7、强化学习" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -217,6 +196,27 @@
               <item name="Tensorflow-Learning" type="462c0819:PsiDirectoryNode" />
               <item name="8、NLP深入学习" type="462c0819:PsiDirectoryNode" />
               <item name="Sentence Similarity(CNN)" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
+              <item name="1、基础回归" type="cbb8eebc:String" user="1、基础回归" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="Tensorflow-Learning" type="cbb8eebc:String" user="Tensorflow-Learning" />
+              <item name="7、强化学习" type="cbb8eebc:String" user="7、强化学习" />
             </path>
           </expand>
           <select />
@@ -396,16 +396,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1505" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="1504" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1959607" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1959607" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.36306402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.40608606" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.40608606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -414,7 +415,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32948583" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -626,7 +626,7 @@
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/TextCNN/train.py" />
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="930">
           <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -636,7 +636,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/eval.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
+        <state relative-caret-position="1290">
           <caret line="94" column="55" selection-start-line="94" selection-start-column="55" selection-end-line="94" selection-end-column="55" />
           <folding>
             <element signature="e#24#47#0" expanded="true" />
@@ -646,7 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Text Classification(CNN)/TextCNN_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
+        <state relative-caret-position="1125">
           <caret line="76" column="43" selection-start-line="76" selection-start-column="43" selection-end-line="76" selection-end-column="43" />
           <folding>
             <element signature="e#1#24#0" expanded="true" />
@@ -663,7 +663,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="270">
           <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -694,17 +694,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
+        <state relative-caret-position="1335">
           <caret line="93" column="27" selection-start-line="93" selection-start-column="27" selection-end-line="93" selection-end-column="27" />
-          <folding>
-            <element signature="e#14#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="-50">
           <caret line="100" column="43" selection-start-line="100" selection-start-column="43" selection-end-line="100" selection-end-column="43" />
           <folding>
             <element signature="e#38#53#0" expanded="true" />
