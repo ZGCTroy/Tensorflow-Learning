@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d5efbe65-c440-4950-98ff-8d31211cf28b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/Sentence_Similarity_CNN_Model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/data_helpers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8、NLP深入学习/Sentence Similarity(CNN)/train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -401,14 +398,14 @@
   <component name="ToolWindowManager">
     <frame x="1505" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1959607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1959607" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32948583" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32948583" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32948583" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36306402" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36306402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.40608606" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.40608606" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
